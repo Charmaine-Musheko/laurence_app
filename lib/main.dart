@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:laurence_app/login/constants.dart';
 import 'package:laurence_app/login/login_screen.dart';
 import 'package:laurence_app/workscreen/home_screen.dart';
+
+import 'login_screen.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: LoginSignupScreen(),
+      home: LoginScreen(),
     );
   }
 }
@@ -72,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage>
                   Container(
                     height: 250.0,
                     width: double.infinity,
-                    color: Color(getColorHexFromStr('#FDD148')),
+                    color: Color(getColorHexFromStr('#F5CAB6F')),
                   ),
                   Positioned(
                     bottom: 50.0,
@@ -82,7 +85,7 @@ class _MyHomePageState extends State<MyHomePage>
                       width: 400.0,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(200.0),
-                          color: Color(getColorHexFromStr('#FEE16D'))
+                          color: Color(getColorHexFromStr('#F5CAB6F'))
                               .withOpacity(0.4)),
                     ),
                   ),
@@ -94,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage>
                         width: 300.0,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(150.0),
-                            color: Color(getColorHexFromStr('#FEE16D'))
+                            color: Color(getColorHexFromStr('#F5CAB6F'))
                                 .withOpacity(0.5))),
                   ),
                   Column(
@@ -142,7 +145,7 @@ class _MyHomePageState extends State<MyHomePage>
                       Padding(
                         padding: EdgeInsets.only(left: 15.0),
                         child: Text(
-                          'Hello , Pino',
+                          'Hello , Laurence',
                           style: TextStyle(
                               fontFamily: 'Quicksand',
                               fontSize: 30.0,
@@ -285,9 +288,9 @@ class _MyHomePageState extends State<MyHomePage>
         color: Colors.white,
         child: TabBar(
           controller: controller,
-          indicatorColor: Colors.yellow,
+          indicatorColor: Color(0xFF5CAB6F),
           tabs: <Widget>[
-            Tab(icon: Icon(Icons.event_seat, color: Colors.yellow)),
+            Tab(icon: Icon(Icons.event_seat, color: Color(0xFF5CAB6F))),
             Tab(icon: Icon(Icons.timer, color: Colors.grey)),
             Tab(icon: Icon(Icons.shopping_cart, color: Colors.grey)),
             Tab(icon: Icon(Icons.person_outline, color: Colors.grey))
@@ -365,7 +368,7 @@ class _MyHomePageState extends State<MyHomePage>
                     Container(
                       height: 40.0,
                       width: 50.0,
-                      color: Color(getColorHexFromStr('#F9C335')),
+                      color: Color(getColorHexFromStr('#F5CAB6F')),
                       child: Center(
                         child: Text(
                           '\$248',
@@ -379,7 +382,7 @@ class _MyHomePageState extends State<MyHomePage>
                     Container(
                       height: 40.0,
                       width: 100.0,
-                      color: Color(getColorHexFromStr('#FEDD59')),
+                      color: Color(getColorHexFromStr('#F5CAB6F')),
                       child: Center(
                         child: Text(
                           'Add to cart',

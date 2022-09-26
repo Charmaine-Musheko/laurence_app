@@ -3,7 +3,7 @@ import 'package:laurence_app/login/size_config.dart';
 
 
 // Colors that we use in our app
-const kPrimaryColor = Color(0xFF7C249C);
+const kPrimaryColor = Color(0xFF5CAB6F);
 const kTextColor = Color(0xFF5F5F5F);
 const kBackgroundColor = Color(0xFFF9F8FD);
 

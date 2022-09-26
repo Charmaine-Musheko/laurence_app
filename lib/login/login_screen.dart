@@ -423,7 +423,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                           //launch('https://kwafatest.herokuapp.com/terms');
                           },
                         text: "terms & conditions",
-                        style: TextStyle(color: Colors.purple),
+                        style: TextStyle(color: Color(0xFF5CAB6F)),
 
                       ),
                     ]),
@@ -498,7 +498,7 @@ class _LoginSignupScreenState extends State<LoginSignupScreen> {
                 ? Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                      colors: [Colors.deepPurple, Colors.purple],
+                      colors: [Colors.green, Colors.greenAccent],
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight),
                   borderRadius: BorderRadius.circular(30),

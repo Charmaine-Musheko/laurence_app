@@ -174,7 +174,7 @@ class _DetailReadScreenState extends State<DetailReadScreen> {
                           top: 0,
                           right: 0,
                           child: Image.asset(
-                            "assets/images/book-3.png",
+                            "assets/food-13563.png",
                             width: 150,
                             fit: BoxFit.fitWidth,
                           ),
