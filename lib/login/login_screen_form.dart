@@ -4,25 +4,24 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:laurence_app/login/constants.dart';
 import 'package:laurence_app/login/registration_screen.dart';
 
+import '../main.dart';
 
-import 'login/constants.dart';
-import 'login/login_screen_form.dart';
-import 'main.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginSecondScreen extends StatefulWidget {
 
 
   String value;
 
-   LoginScreen({ Key? key, this.value = ""}) : super(key: key);
+   LoginSecondScreen({ Key? key, this.value = ""}) : super(key: key);
 
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _LoginSecondScreenState createState() => _LoginSecondScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen>{
+class _LoginSecondScreenState extends State<LoginSecondScreen>{
 
 final _formKey = GlobalKey<FormState>();
 
@@ -80,45 +79,29 @@ final ButtonLogin = Material(
   child: MaterialButton(
     padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
       minWidth: MediaQuery.of(context).size.width,
-    color: Color(0xFF72AE7A),
+    color: kPrimaryColor,
     onPressed: () {
+    //TODO: Replace this with actual text from the fields
 
 
-    Navigator.push(context, MaterialPageRoute(builder: (context) => RegistrationScreen()));},
+    Navigator.push(context, MaterialPageRoute(builder: (context) => MyHomePage()));},
     child: Text(
-    "SignUp",
+    "Login",
     textAlign: TextAlign.center,
     style: TextStyle(
     fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
     ),
     ),
     );
-    final Button2Login = Material(
-      elevation: 5,
-      borderRadius: BorderRadius.circular(30),
-      child: MaterialButton(
-        padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-        minWidth: MediaQuery.of(context).size.width,
-        color: Color(0xFF72AE7A),
-        onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => LoginSecondScreen()));},
-        child: Text(
-          "SignIn",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
-        ),
-      ),
-    );
 
 
   return Scaffold(
 
-      backgroundColor: Color(0xFF5CAB6F),
+      backgroundColor: Color(0xFFBFE8C7),
       body: Center(
       child: SingleChildScrollView(
       child: Container(
-        color: Color(0xFF5CAB6F),
+        color: Color(0xFFBFE8C7),
         child: Padding(
           padding: const EdgeInsets.all(36.0),
           child: Form(
@@ -127,59 +110,36 @@ final ButtonLogin = Material(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-              Text("Good Food Catering Services", style: TextStyle(
-              color: Colors.white,
-                fontSize: 22,
-                fontWeight: FontWeight.bold,
-            ),),
-
-                SizedBox(
-                    height: 200,
-                    child: Image.asset("assets/food-13563.png",
-                      fit: BoxFit.contain,
-                    )),
-
+                Text("Sign In", style: TextStyle( color: Colors.white,fontWeight: FontWeight.bold,
+                    fontSize: 30),),
                 SizedBox(height: 45),
-                Text("Welcome", style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                ),),
+                emailField,
                 SizedBox(height: 45),
-                Text("Sign Up", style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                ),),
-
+                passwordField,
                 SizedBox(height: 45),
                 ButtonLogin,
               SizedBox(height: 25),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text("Don't have an account?", style: TextStyle(
-                    color: Colors.white,
-                  ),),
+                  Text("Don't have an account?"),
                   GestureDetector(
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
                             builder: (context) =>
-                          MyHomePage()));
+                          RegistrationScreen()));
                     },
                     child: Text(
                       "SignUp",
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Color(0xFF5CAB6F),
                         fontWeight: FontWeight.bold,
                         fontSize: 15),
                       ),
                     )
-                  ]),
-                SizedBox(height: 45),
-                Button2Login,
+                  ])
               ],
           ),
           ),
