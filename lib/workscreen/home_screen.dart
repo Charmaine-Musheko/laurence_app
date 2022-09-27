@@ -55,14 +55,14 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                     padding: const EdgeInsets.symmetric(horizontal: 24),
                     child: RichText(
                       text: TextSpan(
-                        style: Theme.of(context).textTheme.headline4,
+                        style: Theme.of(context).textTheme.headline6,
                         children: [
-                          TextSpan(text: "Hi Laurence your meals \n for "),
-                          TextSpan(
-                              text: "today?",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                              ))
+                          TextSpan(text: "Please pick your meal"),
+                          // TextSpan(
+                          //     text: ,
+                          //     style: TextStyle(
+                          //       fontWeight: FontWeight.bold,
+                          //     ))
                         ],
                       ),
                     ),
@@ -76,7 +76,7 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                       children: <Widget>[
 
                         ReadingCard(
-                          image: "assets/book-1.png",
+                          image: "assets/food-13549.png",
                           title: "Crushing & Influence",
                           auth: "Gary Venchuk",
                           rating: 4,
@@ -92,7 +92,7 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                           }, pressRead: () {  }, verified: '',
                         ),
                         ReadingCard(
-                          image: "assets/book-2.png",
+                          image: "assets/food-13563.png",
                           title: "Top Ten Business Hacks",
                           auth: "Herman Joel",
                           rating: 4, pressRead: () {  }, pressDetails: () {  }, verified: '',
@@ -108,7 +108,7 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                       children: <Widget>[
 
                         ReadingCard(
-                          image: "assets/book-1.png",
+                          image: "assets/food-13622.png",
                           title: "Crushing & Influence",
                           auth: "Gary Venchuk",
                           rating: 4,
@@ -124,7 +124,7 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                           }, pressRead: () {  }, verified: '',
                         ),
                         ReadingCard(
-                          image: "assets/book-2.png",
+                          image: "assets/food-13625.png",
                           title: "Top Ten Business Hacks",
                           auth: "Herman Joel",
                           rating: 4, pressRead: () {  }, pressDetails: () {  }, verified: '',

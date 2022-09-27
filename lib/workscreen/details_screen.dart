@@ -147,7 +147,7 @@ class _DetailReadScreenState extends State<DetailReadScreen> {
                                       ),
                                       TextSpan(
                                         text: "Gary Venchuk",
-                                        style: TextStyle(color: kLightBlackColor),
+                                        style: TextStyle(color: Color(0xFF393939)),
                                       ),
                                     ],
                                   ),
@@ -350,7 +350,7 @@ class BookInfo extends StatelessWidget {
             child: Container(
               color: Colors.transparent,
               child: Image.asset(
-                "assets/images/book-1.png",
+                "assets/food-13625.png",
                 height: double.infinity,
                 alignment: Alignment.topRight,
                 fit: BoxFit.fitWidth,

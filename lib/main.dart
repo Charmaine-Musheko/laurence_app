@@ -277,9 +277,9 @@ class _MyHomePageState extends State<MyHomePage>
                   )
                 ],
               ),
-              itemCard('FinnNavian', 'assets/ottoman.jpg', false),
-              itemCard('FinnNavian', 'assets/anotherchair.jpg', true),
-              itemCard('FinnNavian', 'assets/chair.jpg', true)
+              itemCard('FinnNavian', 'assets/food-13622.png', false),
+              itemCard('FinnNavian', 'assets/food-13625.png', true),
+              itemCard('FinnNavian', 'assets/food-13563.png', true)
             ],
           )
         ],
