@@ -156,7 +156,7 @@ final ButtonLogin = Material(
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text("Don't have an account?", style: TextStyle(
+                  Text("Have an account Already?", style: TextStyle(
                     color: Colors.white,
                   ),),
                   GestureDetector(

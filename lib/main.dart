@@ -156,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage>
                       Padding(
                         padding: const EdgeInsets.only(left: 15.0),
                         child: Text(
-                          'What do you want to buy?',
+                          'What would you like to order today?',
                           style: TextStyle(
                               fontFamily: 'Quicksand',
                               fontSize: 23.0,
@@ -208,10 +208,10 @@ class _MyHomePageState extends State<MyHomePage>
                               height: 50.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/sofas.png'))),
+                                      image: AssetImage('assets/sushi2.png'))),
                             ),
                             Text(
-                              'Sofas',
+                              'Sushi Bar',
                               style: TextStyle(fontFamily: 'Quicksand'),
                             )
                           ],
@@ -227,10 +227,10 @@ class _MyHomePageState extends State<MyHomePage>
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image:
-                                      AssetImage('assets/wardrobe.png'))),
+                                      AssetImage('assets/pizza.jpg'))),
                             ),
                             Text(
-                              'Wardrobe',
+                              'Pizza Paradise',
                               style: TextStyle(fontFamily: 'Quicksand'),
                             )
                           ],
@@ -245,10 +245,10 @@ class _MyHomePageState extends State<MyHomePage>
                               height: 50.0,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/desks.png'))),
+                                      image: AssetImage('assets/food-13549.png'))),
                             ),
                             Text(
-                              'Desk',
+                              'Quick Meal',
                               style: TextStyle(fontFamily: 'Quicksand'),
                             )
                           ],
@@ -264,10 +264,10 @@ class _MyHomePageState extends State<MyHomePage>
                               decoration: BoxDecoration(
                                   image: DecorationImage(
                                       image:
-                                      AssetImage('assets/dressers.png'))),
+                                      AssetImage('assets/Burger.png'))),
                             ),
                             Text(
-                              'Dresser',
+                              'Burgers',
                               style: TextStyle(fontFamily: 'Quicksand'),
                             )
                           ],
@@ -277,9 +277,9 @@ class _MyHomePageState extends State<MyHomePage>
                   )
                 ],
               ),
-              itemCard('FinnNavian', 'assets/ottoman.jpg', false),
-              itemCard('FinnNavian', 'assets/anotherchair.jpg', true),
-              itemCard('FinnNavian', 'assets/chair.jpg', true)
+              itemCard('Happy Lunch', 'Eggs, Tomatos, Green beans, Purple lettuce with sweet corn / a healthy lunch', 'N\$105.00', 'assets/food-36802.png', false),
+              itemCard('Burger Meal', 'Double Meat Patty, Tomatos, with extra cheese / Including a large chips and a mini burger', 'N\$85.00', 'assets/food-13625.png', true),
+              itemCard('Hawaiian Pizza','Dough topped with tomato sauce, shredded mozzarella / Has slices of sweat tasting pineapple fruit', 'N\$120.00', 'assets/hawai pizza.png', true)
             ],
           )
         ],
@@ -300,7 +300,7 @@ class _MyHomePageState extends State<MyHomePage>
     );
   }
 
-  Widget itemCard(String title, String imgPath, bool isFavorite) {
+  Widget itemCard(String title, String details, String Price, String imgPath, bool isFavorite) {
     return Padding(
       padding: EdgeInsets.only(left: 15.0, right: 15.0, top: 15.0),
       child: Container(
@@ -353,7 +353,7 @@ class _MyHomePageState extends State<MyHomePage>
                 Container(
                   width: 175.0,
                   child: Text(
-                    'Scandinavian small sized double sofa imported full leather / Dale Italia oil wax leather black',
+                    details,
                     textAlign: TextAlign.left,
                     style: TextStyle(
                         fontFamily: 'Quicksand',
@@ -367,11 +367,11 @@ class _MyHomePageState extends State<MyHomePage>
                     SizedBox(width: 35.0),
                     Container(
                       height: 40.0,
-                      width: 50.0,
+                      width: 85.0,
                       color: Color(getColorHexFromStr('#F5CAB6F')),
                       child: Center(
                         child: Text(
-                          '\$248',
+                          Price,
                           style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'Quicksand',

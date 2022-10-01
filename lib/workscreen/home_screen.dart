@@ -12,6 +12,9 @@ import '../widgets/book_rating.dart';
 import '../widgets/reading_card_list.dart';
 import '../widgets/two_side_rounded_button.dart';
 import 'details_screen.dart';
+import 'details_screen1.dart';
+import 'details_screen2.dart';
+import 'details_screen3.dart';
 
 class HomeScreenRead extends StatefulWidget {
   HomeScreenRead({
@@ -76,9 +79,9 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                       children: <Widget>[
 
                         ReadingCard(
-                          image: "assets/book-1.png",
-                          title: "Crushing & Influence",
-                          auth: "Gary Venchuk",
+                          image: "assets/food-13549.png",
+                          title: "Steak & fries",
+                          auth: "Steak & fries ",
                           rating: 4,
                           pressDetails: () {
                             Navigator.push(
@@ -92,10 +95,21 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                           }, pressRead: () {  }, verified: '',
                         ),
                         ReadingCard(
-                          image: "assets/book-2.png",
-                          title: "Top Ten Business Hacks",
+                          image: "assets/food-13622.png",
+                          title: "Low-carb Lettuce Wrap Sandwich",
                           auth: "Herman Joel",
-                          rating: 4, pressRead: () {  }, pressDetails: () {  }, verified: '',
+                          rating: 4,
+                          pressDetails: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return DetailReadScreen1();
+                                },
+                              ),
+                            );
+                          },
+                          pressRead: () {  },  verified: '',
                         ),
                        SizedBox(width: 30),
                       ],
@@ -108,8 +122,8 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                       children: <Widget>[
 
                         ReadingCard(
-                          image: "assets/book-1.png",
-                          title: "Crushing & Influence",
+                          image: "assets/food-13625.png",
+                          title: "Burger Meal",
                           auth: "Gary Venchuk",
                           rating: 4,
                           pressDetails: () {
@@ -117,17 +131,28 @@ class _HomeScreenReadState extends State<HomeScreenRead> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) {
-                                  return DetailReadScreen();
+                                  return DetailReadScreen2();
                                 },
                               ),
                             );
                           }, pressRead: () {  }, verified: '',
                         ),
                         ReadingCard(
-                          image: "assets/book-2.png",
-                          title: "Top Ten Business Hacks",
+                          image: "assets/food-13563.png",
+                          title: "Fish Tacos with Lettuce and Tomatos",
                           auth: "Herman Joel",
-                          rating: 4, pressRead: () {  }, pressDetails: () {  }, verified: '',
+                          rating: 4,
+                          pressDetails: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return DetailReadScreen3();
+                                },
+                              ),
+                            );
+                          },
+                          pressRead: () {  },  verified: '',
                         ),
                         SizedBox(width: 30),
                       ],

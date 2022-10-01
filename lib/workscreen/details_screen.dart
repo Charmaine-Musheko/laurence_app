@@ -50,46 +50,6 @@ class _DetailReadScreenState extends State<DetailReadScreen> {
                     ),
                     child: BookInfo(size: size,)
                   ),
-                  Padding(
-                    padding: EdgeInsets.only(top: size.height * .48 - 20),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                      //  ListView.builder(
-                          // scrollDirection: Axis.horizontal,
-                          // itemBuilder: (BuildContext context, int index) {
-                          //
-                          // },
-                          // children: [_causes.map((currentCause) => ChapterCard(
-                          //   name: currentCause.title,
-                          //   chapterNumber: 1,
-                          //   tag: "Life is about change",
-                          //   press: () {},
-                          // ).toList(),
-                          //   ],
-                     //   ),
-                        ChapterCard(
-                          name: "Power",
-                          chapterNumber: 2,
-                          tag: "Everything loves power",
-                          press: () {},
-                        ),
-                        // ChapterCard(
-                        //   name: "Influence",
-                        //   chapterNumber: 3,
-                        //   tag: "Influence easily like never before",
-                        //   press: () {},
-                        // ),
-                        // ChapterCard(
-                        //   name: "Win",
-                        //   chapterNumber: 4,
-                        //   tag: "Winning is what matters",
-                        //   press: () {},
-                        // ),
-                        SizedBox(height: 10),
-                      ],
-                    ),
-                  ),
                 ],
               ),
               Padding(
@@ -140,13 +100,13 @@ class _DetailReadScreenState extends State<DetailReadScreen> {
                                     children: [
                                       TextSpan(
                                         text:
-                                            "How To Win \nFriends & Influence \n",
+                                            "Fish Tacos \nLettuce and Tomatos \n",
                                         style: TextStyle(
                                           fontSize: 15,
                                         ),
                                       ),
                                       TextSpan(
-                                        text: "Gary Venchuk",
+                                        text: "",
                                         style: TextStyle(color: kLightBlackColor),
                                       ),
                                     ],
@@ -225,36 +185,7 @@ class ChapterCard extends StatelessWidget {
           ),
         ],
       ),
-      child: Row(
-        children: <Widget>[
-          RichText(
-            text: TextSpan(
-              children: [
-                TextSpan(
-                  text: "Chapter $chapterNumber : $name \n",
-                  style: TextStyle(
-                    fontSize: 16,
-                    color: kBlackColor,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                TextSpan(
-                  text: tag,
-                  style: TextStyle(color: kLightBlackColor),
-                ),
-              ],
-            ),
-          ),
-          Spacer(),
-          IconButton(
-            icon: Icon(
-              Icons.arrow_forward_ios,
-              size: 18,
-            ),
-            onPressed: press,
-          )
-        ],
-      ),
+
     );
   }
 }
@@ -282,7 +213,7 @@ class BookInfo extends StatelessWidget {
                 Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Crushing &",
+                    "Steak &",
                     style: Theme.of(context).textTheme.headline4?.copyWith(
                       fontSize: 28
                     ),
@@ -293,7 +224,7 @@ class BookInfo extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.only(top: 0),
                   child: Text(
-                    "Influence",
+                    "frites",
                     style: Theme.of(context).textTheme.subtitle1?.copyWith(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
@@ -309,7 +240,7 @@ class BookInfo extends StatelessWidget {
                           width: this.size.width * .3,
                           padding: EdgeInsets.only(top: this.size.height * .02),
                           child: Text(
-                            "When the earth was flat andeveryone wanted to win the gameof the best and people and winning with an A game with all the things you have.",
+                            "A dish consisting of steak paired with French fries. A famous national dish of Belgium, commonly served in European brasseries.ß",
                             maxLines: 5,
                             style: TextStyle(
                               fontSize: 10,
@@ -324,7 +255,7 @@ class BookInfo extends StatelessWidget {
                             color: Colors.white,
                             borderRadius: BorderRadius.circular(30),
                           ),
-                          child: FlatButton(
+                          child: TextButton(
                             onPressed: () {},
                             child: Text("Read", style: TextStyle(fontWeight: FontWeight.bold),),
                           ), 
@@ -350,7 +281,7 @@ class BookInfo extends StatelessWidget {
             child: Container(
               color: Colors.transparent,
               child: Image.asset(
-                "assets/images/book-1.png",
+                "assets/food-13549.png",
                 height: double.infinity,
                 alignment: Alignment.topRight,
                 fit: BoxFit.fitWidth,
