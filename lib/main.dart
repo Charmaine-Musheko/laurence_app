@@ -290,9 +290,9 @@ class _MyHomePageState extends State<MyHomePage>
           controller: controller,
           indicatorColor: Color(0xFF5CAB6F),
           tabs: <Widget>[
-            Tab(icon: Icon(Icons.event_seat, color: Color(0xFF5CAB6F))),
+            Tab(icon: Icon(Icons.event_seat, color: Colors.grey)),
             Tab(icon: Icon(Icons.timer, color: Colors.grey)),
-            Tab(icon: Icon(Icons.shopping_cart, color: Colors.grey)),
+            Tab(icon: Icon(Icons.shopping_cart, color: Color(0xFF5CAB6F))),
             Tab(icon: Icon(Icons.person_outline, color: Colors.grey))
           ],
         ),
