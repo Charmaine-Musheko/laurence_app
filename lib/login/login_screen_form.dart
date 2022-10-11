@@ -54,6 +54,7 @@ final TextEditingController passwordController = new TextEditingController();
 
     //email field
     final passwordField = TextFormField(
+      obscureText: true,
       autofocus: false,
       controller: passwordController,
 

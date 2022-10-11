@@ -135,9 +135,9 @@ class ReadingListCard extends StatelessWidget {
 }
 class ReadingCard extends StatelessWidget {
   final String image;
-  final String title;
   final String verified;
   final String auth;
+  final String title;
   final int rating;
   final void Function()? pressDetails;
   final void Function()? pressRead;
@@ -145,8 +145,8 @@ class ReadingCard extends StatelessWidget {
   const ReadingCard({
     Key? key,
     required this.image,
-    required this.title,
     required this.auth,
+    required this.title,
     required this.verified,
     required this.rating,
     required this.pressDetails,

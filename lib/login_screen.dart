@@ -4,11 +4,12 @@ import 'dart:convert';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:laurence_app/login/login_screen.dart';
+import 'package:laurence_app/login/login_screen_form.dart';
 import 'package:laurence_app/login/registration_screen.dart';
 
 
 import 'login/constants.dart';
-import 'login/login_screen_form.dart';
 import 'main.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -158,7 +159,7 @@ final ButtonLogin = Material(
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text("Don't have an account?", style: TextStyle(
+                  Text("Have an account Already?", style: TextStyle(
                     color: Colors.white,
                   ),),
                   GestureDetector(
@@ -167,10 +168,10 @@ final ButtonLogin = Material(
                         context,
                         MaterialPageRoute(
                             builder: (context) =>
-                          MyHomePage()));
+                  LoginSecondScreen()));
                     },
                     child: Text(
-                      "SignUp",
+                      "SignIn",
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,

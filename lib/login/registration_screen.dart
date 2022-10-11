@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../login_screen.dart';
 import '../main.dart';
 import 'constants.dart';
+import 'login_screen_form.dart';
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({Key? key}) : super(key: key);
@@ -162,7 +163,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => LoginScreen()));
+                                      builder: (context) => LoginSecondScreen()));
                             },
                             child: Text(
                               "Login",
