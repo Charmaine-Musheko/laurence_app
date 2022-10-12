@@ -1,6 +1,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:laurence_app/workscreen/payment.dart';
 
 import '../consttants.dart';
 import '../widgets/book_rating.dart';
@@ -120,8 +121,17 @@ class _DetailReadScreenState extends State<DetailReadScreen> {
                                     SizedBox(width: 10),
                                     Expanded(
                                       child: RoundedButton(
-                                        text: "Read",
-                                        verticalPadding: 10, press: () {  },
+                                        text: "Place Order",
+                                        verticalPadding: 10, press: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) {
+                                              return BankingPage();
+                                            },
+                                          ),
+                                        );
+                                      },
                                       ),
                                     ),
                                   ],
