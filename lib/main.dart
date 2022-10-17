@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:laurence_app/login/constants.dart';
 import 'package:laurence_app/login/login_screen.dart';
+import 'package:laurence_app/pages/root.dart';
 import 'package:laurence_app/workscreen/home_screen.dart';
 
 import 'login_screen.dart';
@@ -379,17 +380,23 @@ class _MyHomePageState extends State<MyHomePage>
                         ),
                       ),
                     ),
-                    Container(
-                      height: 40.0,
-                      width: 100.0,
-                      color: Color(getColorHexFromStr('#F5CAB6F')),
-                      child: Center(
-                        child: Text(
-                          'Add to cart',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontFamily: 'Quicksand',
-                              fontWeight: FontWeight.bold),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => RootApp()));
+                      },
+                      child: Container(
+                        height: 40.0,
+                        width: 100.0,
+                        color: Color(getColorHexFromStr('#F5CAB6F')),
+                        child: Center(
+                          child: Text(
+                            'Add to cart',
+                            style: TextStyle(
+                                color: Colors.white,
+                                fontFamily: 'Quicksand',
+                                fontWeight: FontWeight.bold),
+                          ),
                         ),
                       ),
                     )
