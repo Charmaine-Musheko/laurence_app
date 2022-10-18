@@ -38,7 +38,7 @@ class MySampleState extends State<MySample> {
       title: 'Flutter Credit Card View Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
       home: Scaffold(
         resizeToAvoidBottomInset: false,
@@ -102,7 +102,7 @@ class MySampleState extends State<MySample> {
                           isExpiryDateVisible: true,
                           cardHolderName: cardHolderName,
                           expiryDate: expiryDate,
-                          themeColor: Colors.blue,
+                          themeColor: Colors.green,
                           textColor: Colors.white,
                           cardNumberDecoration: InputDecoration(
                             labelText: 'Number',

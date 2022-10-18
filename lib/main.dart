@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:laurence_app/login/constants.dart';
 import 'package:laurence_app/login/login_screen.dart';
+import 'package:laurence_app/pages/CartPage.dart';
+import 'package:laurence_app/pages/CheckOutPage.dart';
 import 'package:laurence_app/pages/root.dart';
 import 'package:laurence_app/workscreen/home_screen.dart';
 
@@ -383,7 +385,7 @@ class _MyHomePageState extends State<MyHomePage>
                     GestureDetector(
                       onTap: (){
                         Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => RootApp()));
+                            MaterialPageRoute(builder: (context) => CartPage()));
                       },
                       child: Container(
                         height: 40.0,

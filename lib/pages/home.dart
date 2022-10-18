@@ -11,14 +11,14 @@ import '../widgets/notification_box.dart';
 import '../widgets/popular_item.dart';
 
 
-class HomePage extends StatefulWidget {
-  const HomePage({ Key? key }) : super(key: key);
+class HomeNewPage extends StatefulWidget {
+  const HomeNewPage({ Key? key }) : super(key: key);
 
   @override
-  _HomePageState createState() => _HomePageState();
+  _HomeNewPageState createState() => _HomeNewPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomeNewPageState extends State<HomeNewPage> {
   @override
   Widget build(BuildContext context) {
     return 

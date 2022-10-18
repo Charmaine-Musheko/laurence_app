@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:laurence_app/workscreen/payment.dart';
 
 import '../consttants.dart';
+import '../pages/CartPage.dart';
 import '../widgets/book_rating.dart';
 import '../widgets/rounded_button.dart';
 
@@ -123,14 +124,8 @@ class _DetailReadScreenState extends State<DetailReadScreen> {
                                       child: RoundedButton(
                                         text: "Place Order",
                                         verticalPadding: 10, press: () {
-                                        Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                            builder: (context) {
-                                              return BankingPage();
-                                            },
-                                          ),
-                                        );
+                                        Navigator.push(context,
+                                            MaterialPageRoute(builder: (context) => CartPage()));
                                       },
                                       ),
                                     ),

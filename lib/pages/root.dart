@@ -19,7 +19,7 @@ class _RootAppState extends State<RootApp> {
     Icons.shopping_cart_rounded, Icons.person_rounded
   ];
   List<Widget> pages = [
-    HomePage(), HomePage(), HomePage(), HomePage(),
+    HomeNewPage(), HomeNewPage(), HomeNewPage(), HomeNewPage(),
   ];
 
   @override

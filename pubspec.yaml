@@ -39,6 +39,7 @@ dependencies:
   badges: ^2.0.2
   google_fonts: ^2.1.1
   font_awesome_flutter: ^9.2.0
+  money_formatter: ^0.0.3
 
 
 dev_dependencies:
@@ -59,6 +60,7 @@ dev_dependencies:
 flutter:
   assets:
     - assets/
+    - images/
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
